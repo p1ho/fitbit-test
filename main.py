@@ -2,7 +2,7 @@ import fitbit
 import gather_keys_oauth2 as Oauth2
 import pandas as pd
 import datetime
-from secrest.py import CLIENT_ID, CLIENT_SECRET 
+from secrets import CLIENT_ID, CLIENT_SECRET 
 
 def main():
     server = Oauth2.OAuth2Server(CLIENT_ID, CLIENT_SECRET)
