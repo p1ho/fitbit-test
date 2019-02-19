@@ -33,16 +33,17 @@ This will activate your virtual environment, meaning any packages that you insta
 The easiest way to tell if you're in a venv is if you see a ```(venv)``` at the beginning or above your commandline.
 
 ## Installing dependencies
-Run the following code after you're inside a venv.
+Run the following code after you're inside a virtual environment.
 ```
 $ pip install -r requirements.txt
 ```
-This will install all the dependencies inside the requirements.txt
+This will install all the dependencies inside the requirements.txt.
+
 I've pinned the versions of the package, so if they somehow get updated in the future you're going to be working with the version locked in this time.
 
 ## Specify your secrets
 For security purpose, I've put your client secrets inside ```.gitignore```
-So you have to create a secrets.py with the following fields:
+So you have to create a ```secrets.py``` with the following fields:
 ```Python
 CLIENT_ID = 'YOUR ID'
 CLIENT_SECRET = 'YOUR TOKEN'
